@@ -3,17 +3,166 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
   <title>Fashion Hub</title>
+  <style type="text/tailwindcss">
+    @layer components{
+      .product-grid{
+        @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4;
+      }
+      .product-card{
+        @apply bg-white rounded-lg shadow p-4 relative;
+      }
+      .product-image{
+        @apply w-full h-[250px] object-contain rounded-md transition-transform duration-300 hover:scale-110;
+      }
+      .product-title{
+        @apply text-gray-900 font-bold;
+      }
+      .product-price{
+        @apply mt-2 font-semibold;
+      }
+      .cart-button{
+        @apply absolute bottom-4 right-4 bg-gray-100 text-gray-900 text-sm px-4 py-4 rounded-full shadow-md hover:bg-gray-200 transition-transform;
+      }
+    }
+  </style>
 </head>
-<body>
-  <nav>
-    <ul>
-      <li><a href="../index.html">Home</a></li>
-      <li><a href="../assets/women.html">Women</a></li>
-      <li><a href="../assets/men.html">Men</a></li>
-      <li><a href="../assets/kids.html">Kids</a></li>
-      <li><a href="../assets/contact.html">Contact</a></li>
-    </ul>
-  </nav>
+<body class="bg-gray-100 p-8 font-sans">
+  <header>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../assets/women.html">Women</a></li>
+        <li><a href="../assets/men.html">Men</a></li>
+        <li><a href="../assets/kids.html">Kids</a></li>
+        <li><a href="../assets/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section>
+      <div class="product-grid">
+
+        <div class="product-card">
+          <img src="../assets/images/men-jeans.jpg" alt="Jeans" class="product-image">
+          <h3 class="product-title">Men's Blue Jeans</h3>
+          <p class="product-price">45,00 €</p>
+          <button class="cart-button">🛒</button>
+        </div> 
+
+        <div class="product-card">
+          <img src="../assets/images/men-polo-tshirt.jpg" alt="T-shirt" class="product-image">
+          <h3 class="product-title">Men's Polo T-shirt</h3>
+          <p class="product-price">25,00 €</p>
+          <button class="cart-button">🛒</button>
+        </div>
+       
+
+        <div class="product-card">
+          <img src="../assets/images/men-white-tshirt.jpg" alt="T-shirt" class="product-image">
+          <h3 class="product-title">Men's white T-shirt</h3>
+          <p class="product-price">40,00 €</p>
+          <button class="cart-button">🛒</button>
+        </div>
+        
+
+        <div class="product-card">
+          <img src="../assets/images/men-leather-loffer.jpg" alt="Loafer" class="product-image">
+          <h3 class="product-title">Men's Leather Loafer</h3>
+          <p class="product-price">57,90 €</p>
+          <button class="cart-button">🛒</button>
+        </div>
+        
+
+        <div class="product-card">
+          <img src="../assets/images/men-shoes.jpg" alt="Shoes" class="product-image">
+          <h3 class="product-title">Men's White Shoes</h3>
+          <p class="product-price">77,99 €</p>
+          <button class="cart-button">🛒</button>
+        </div>
+       
+
+        <div class="product-card">
+          <img src="../assets/images/men-trouser.jpg" alt="Trouser" class="product-image">
+          <h3 class="product-title">Men's White Trouser</h3>
+          <p class="product-price">37,90 €</p>
+          <button class="cart-button">🛒</button>
+        </div>
+        
+
+        <div class="product-card">
+          <img src="../assets/images/reversible-woven-belt.jpg" alt="Belt" class="product-image">
+          <h3 class="product-title">Reversible Woven Belt</h3>
+          <p class="product-price">47,80 €</p>
+          <button class="cart-button">🛒</button>
+        </div>
+        
+
+        <div class="product-card">
+          <img src="../assets/images/six-panel-baseball-cap.jpg" alt="Loafer" class="product-image">
+          <h3 class="product-title">Men's Six Panel Baseball Cap</h3>
+          <p class="product-price">11,90 €</p>
+          <button class="cart-button">🛒</button>
+        </div>
+        
+
+        <div class="product-card">
+          <img src="../assets/images/Men-black-sport-jacket.jpg" alt="Jacket" class="product-image">
+          <h3 class="product-title">Men's Sport Jacket</h3>
+          <p class="product-price">101,90 €</p>
+          <button class="cart-button">🛒</button>
+        </div>
+        
+
+        <div class="product-card">
+          <img src="../assets/images/men-cotton-tshirt.jpg" alt="T-shirt" class="product-image">
+          <h3 class="product-title">Ocean Blue Organic Cotton T-Shirt</h3>
+          <p class="product-price">80,90 €</p>
+          <button class="cart-button">🛒</button>
+        </div>
+        
+
+        <div class="product-card">
+          <img src="../assets/images/men-fit-denim.jpg" alt="Pent" class="product-image">
+          <h3 class="product-title">Rinse Blue Selvedge Standard Fit Denim</h3>
+          <p class="product-price">120,90 €</p>
+          <button class="cart-button">🛒</button>
+        </div>
+        
+
+        <div class="product-card">
+          <img src="../assets/images/men-shirt1.jpg" alt="shirt" class="product-image">
+          <h3 class="product-title">Light Yellow Lovely Shirt</h3>
+          <p class="product-price">40,90 €</p>
+          <button class="cart-button">🛒</button>
+        </div>
+        
+
+        <div class="product-card">
+          <img src="../assets/images/men-shorts.jpg" alt="Shorts" class="product-image">
+          <h3 class="product-title">Light Orange Shorts</h3>
+          <p class="product-price">12,90 €</p>
+          <button class="cart-button">🛒</button>
+        </div>
+        
+
+        <div class="product-card">
+          <img src="../assets/images/men-jacket2.jpg" alt="Jacket" class="product-image">
+          <h3 class="product-title">Embroidered Skull Sand Jacket</h3>
+          <p class="product-price">140,90 €</p>
+          <button class="cart-button">🛒</button>
+        </div>
+        
+
+        <div class="product-card">
+          <img src="../assets/images/men-shoes2.jpg" alt="Shoes" class="product-image">
+          <h3 class="product-title">White, Blue & Beige Runner 2.0 Sneakers</h3>
+          <p class="product-price">240,90 €</p>
+          <button class="cart-button">🛒</button>
+        </div>
+      </div> 
+
+  </section>
 </body>
 </html>
