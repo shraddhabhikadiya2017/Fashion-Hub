@@ -1,19 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fashion Hub</title>
-</head>
-<body>
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="./assets/women.html">Women</a></li>
-      <li><a href="./assets/men.html">Men</a></li>
-      <li><a href="./assets/kids.html">Kids</a></li>
-      <li><a href="./assets/contact.html">Contact</a></li>
-    </ul>
-  </nav>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <title>Fashion Hub</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="./assets/women.html">Women</a></li>
+        <li><a href="./assets/men.html">Men</a></li>
+        <li><a href="./assets/kids.html">Kids</a></li>
+        <li><a href="./assets/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <header
+      class="h-120 bg-[url('https://images.pexels.com/photos/1154861/pexels-photo-1154861.jpeg')] bg-[center_10%] bg-cover flex items-center justify-center text-white"
+    >
+      <div class="text-center text-shadow-lg">
+        <h1 class="text-4xl md:text-6xl font-bold mb-2">
+          Discover our new collection
+        </h1>
+        <p class="text-xl md:text-2xl mb-8">Stylish. Sustainable. Unique.</p>
+        <a
+          href="#"
+          class="px-8 py-4 bg-white text-black font-semibold rounded-lg hover:bg-gray-200 active:bg-gray-400 transition-all"
+        >
+          Discover now
+        </a>
+      </div>
+    </header>
+    <main>
+      <section class="py-8 px-4">
+        <h2
+          class="text-center text-2xl md:text-4xl font-extrabold text-gray-900"
+        >
+          Favorite Outfits
+        </h2>
+
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 pt-4 place-items-center"
+        >
+          <a href="#"
+            ><img
+              class="max-h-150 transition-all duration-300 hover:scale-105 hover:shadow-xl"
+              src="https://images.pexels.com/photos/818992/pexels-photo-818992.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              alt="fashion outfit 1"
+          /></a>
+          <a href="#"
+            ><img
+              class="max-h-150 transition-all duration-300 hover:scale-105 hover:shadow-xl"
+              src="https://images.pexels.com/photos/965324/pexels-photo-965324.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              alt="fashion outfit 2"
+          /></a>
+          <a href="#"
+            ><img
+              class="max-h-150 transition-all duration-300 hover:scale-105 hover:shadow-xl"
+              src="https://images.pexels.com/photos/794063/pexels-photo-794063.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              alt="fashion outfit 3"
+          /></a>
+          <a href="#"
+            ><img
+              class="max-h-150 transition-all duration-300 hover:scale-105 hover:shadow-xl"
+              src="https://images.pexels.com/photos/2065195/pexels-photo-2065195.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              alt="fashion outfit 4"
+          /></a>
+        </div>
+      </section>
+      <section class="bg-stone-200 py-8 px-4">
+        <div class="text-center">
+          <h2 class="font-extrabold text-gray-900">
+            IT'S ALL ABOUT FASHION AND LIFESTYLE
+          </h2>
+          <p>
+            On our online shop you will find a selection of the latest trends of
+            the Season of more than 100 world's most iconic designer brands.
+          </p>
+          <div
+            class="grid grid-cols-1 md:grid-cols-3 gap-4 pt-8 place-items-center"
+          >
+            <div class="">
+              <h3 class="font-bold">Free Shipping</h3>
+              <p>Fast delivery worldwide</p>
+            </div>
+            <div class="">
+              <h3 class="font-bold">Flexible Payment</h3>
+              <p>multiple secure Payment methods</p>
+            </div>
+            <div class="">
+              <h3 class="font-bold">24/7 Support</h3>
+              <p>full online support all days</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
