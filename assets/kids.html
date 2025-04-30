@@ -3,8 +3,32 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
   <title>Fashion Hub</title>
+  <style type="text/tailwindcss">
+    @layer components{
+      .product-grid{
+        @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4;
+      }
+      .product-card{
+        @apply bg-white rounded-lg shadow p-4 relative;
+      }
+      .product-image{
+        @apply w-full h-[250px] object-contain rounded-md transition-transform duration-300 hover:scale-110;
+      }
+      .product-title{
+        @apply text-gray-900 font-bold mt-6;
+      }
+      .product-price{
+        @apply mt-2 font-semibold;
+      }
+      .cart-button{
+        @apply absolute bottom-4 right-4 bg-gray-100 text-gray-900 text-sm px-4 py-4 rounded-full shadow-md hover:bg-gray-200 transition-transform;
+      }
+    }
+  </style>
 </head>
+
 <body>
   <nav>
     <ul>
@@ -15,5 +39,129 @@
       <li><a href="../assets/contact.html">Contact</a></li>
     </ul>
   </nav>
+
+  <section>
+    <div class="product-grid">
+
+      <div class="product-card">
+        <img src="../assets/images/kids-tshirt.jpg" alt="T-shirt" class="product-image">
+        <h3 class="product-title">Regular Fit - Zip-up sweatshirtblue mirage</h3>
+        <p class="product-price">20,00 €</p>
+        <button class="cart-button">🛒</button>
+      </div> 
+
+      <div class="product-card">
+        <img src="../assets/images/kids-lagis.jpg" alt="Leggings" class="product-image">
+        <h3 class="product-title">5 PACK-Leggings-Trousers</h3>
+        <p class="product-price">28,00 €</p>
+        <button class="cart-button">🛒</button>
+      </div>
+     
+
+      <div class="product-card">
+        <img src="../assets/images/kids-set.jpg" alt="set-Trousers" class="product-image">
+        <h3 class="product-title">SET-Trousers-blue purple</h3>
+        <p class="product-price">19,45 €</p>
+        <button class="cart-button">🛒</button>
+      </div>
+      
+
+      <div class="product-card">
+        <img src="../assets/images/kids-fleece-jacket.jpg" alt="Jacket" class="product-image">
+        <h3 class="product-title">COSY REGULAR FIR-Fleece Jacket-navy</h3>
+        <p class="product-price">24,90 €</p>
+        <button class="cart-button">🛒</button>
+      </div>
+      
+
+      <div class="product-card">
+        <img src="../assets/images/kids-waterproof-jacket.jpg" alt="Jacket" class="product-image">
+        <h3 class="product-title">CHASE MARSHALL-Wasterproof jacket-skyblue</h3>
+        <p class="product-price">15,99 €</p>
+        <button class="cart-button">🛒</button>
+      </div>
+     
+
+      <div class="product-card">
+        <img src="../assets/images/kids-jumpsuit.jpg" alt="Jumpsuit" class="product-image">
+        <h3 class="product-title">SET-3 Jumpsuit</h3>
+        <p class="product-price">24,10 €</p>
+        <button class="cart-button">🛒</button>
+      </div>
+      
+
+      <div class="product-card">
+        <img src="../assets/images/kids-shorts-green.jpg" alt="shorts" class="product-image">
+        <h3 class="product-title">OUTFIT - shorts - green</h3>
+        <p class="product-price">22,99 €</p>
+        <button class="cart-button">🛒</button>
+      </div>
+      
+
+      <div class="product-card">
+        <img src="../assets/images/kids-skirt.jpg" alt="Skirt" class="product-image">
+        <h3 class="product-title">Denim skirt - cream white</h3>
+        <p class="product-price">19,95 €</p>
+        <button class="cart-button">🛒</button>
+      </div>
+      
+
+      <div class="product-card">
+        <img src="../assets/images/kids-socks.jpg" alt="Socks" class="product-image">
+        <h3 class="product-title">RUFFLE 4 PACK - Trainer socks - pink purple and white</h3>
+        <p class="product-price">13,00 €</p>
+        <button class="cart-button">🛒</button>
+      </div>
+      
+
+      <div class="product-card">
+        <img src="../assets/images/kids-suit.jpg" alt="Suit" class="product-image">
+        <h3 class="product-title">REGULAR FIT-SET - suit - pink</h3>
+        <p class="product-price">37,90 €</p>
+        <button class="cart-button">🛒</button>
+      </div>
+      
+
+      <div class="product-card">
+        <img src="../assets/images/kids-tie.jpg" alt="Tie" class="product-image">
+        <h3 class="product-title">REGULAR FIT - Tie - navy blue</h3>
+        <p class="product-price">16,00 €</p>
+        <button class="cart-button">🛒</button>
+      </div>
+      
+
+      <div class="product-card">
+        <img src="../assets/images/kids-green-suit.jpg" alt="suit" class="product-image">
+        <h3 class="product-title">Suits SET - Suit - green</h3>
+        <p class="product-price">70,95 €</p>
+        <button class="cart-button">🛒</button>
+      </div>
+      
+
+      <div class="product-card">
+        <img src="../assets/images/kids-body.jpg" alt="Body" class="product-image">
+        <h3 class="product-title">5 PACK - Body - blue</h3>
+        <p class="product-price">17,90 €</p>
+        <button class="cart-button">🛒</button>
+      </div>
+      
+
+      <div class="product-card">
+        <img src="../assets/images/kids-girl-short.jpg" alt="Shorts" class="product-image">
+        <h3 class="product-title">Fashion Shorts - black</h3>
+        <p class="product-price">22,50 €</p>
+        <button class="cart-button">🛒</button>
+      </div>
+      
+
+      <div class="product-card">
+        <img src="../assets/images/kids-sport.jpg" alt="Unisex-set" class="product-image">
+        <h3 class="product-title">Minicats Newborn UNISEX Set - Sports shorts - green moon</h3>
+        <p class="product-price">32,95 €</p>
+        <button class="cart-button">🛒</button>
+      </div>
+    </div> 
+
+</section>
 </body>
 </html>
